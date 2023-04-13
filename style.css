@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Concert One', cursive;
+    font-family: 'Inter';
     background-color: #F3F5FC;
 }
 .letra_a{
@@ -15,7 +15,6 @@
     font-size: 32px;
     line-height: 150%;
     color: #0A3871;
-    /* border: solid red 12px; */
     text-align: center;
     border: none;
 
@@ -62,10 +61,18 @@
 }
 
 .copiar{
-    /* position: relative;
-    bottom: 10px;
-    right: 10px; */
-    vertical-align: text-bottom ;
+    width: 95%;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0A3871;
+
 }
 
 .borde {
@@ -85,8 +92,6 @@
     flex-direction: column;
     border: solid blueviolet 5px;
     width: 70%;
-    
-
 }
 
 .bloqueDer {
@@ -94,12 +99,18 @@
     flex-direction: column;
     border: solid blue 2px;
     width: 30%;
-    /* line-height: 4; */
     justify-content: space-between;
-    
-    
 }
 
 .centrar{
-    margin: auto;
+    /* margin: auto; */
+}
+.boton_copiar{
+    margin-bottom: 0;
+    margin-left: 6%;
+
+
+}
+.svg_copiar_boton{
+    width: 100%;
 }
