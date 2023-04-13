@@ -7,6 +7,9 @@
 }
 .letra_a{
     width: 30px;
+    position: fixed;
+    top: 80px;
+    left: 110px;
 }
 .text_tarea{
     font-family: 'Inter';
