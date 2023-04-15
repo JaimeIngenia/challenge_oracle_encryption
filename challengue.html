@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 
 
@@ -31,12 +29,13 @@
                 cols="50"
                 placeholder="Ingrese el texto aquí"></textarea>
             <div class="botones">
-                <button id="encriptar" class="encriptar" >Encriptar!</button>
-                <button class="desencriptar"  >Desencriptación</button>
+                <button id="encriptar"     class="encriptar" >Encriptar!</button>
+                <button id="desencriptar"  class="desencriptar"  >Desencriptación</button>
             </div>
         </div>
 
         <div class="bloqueDer">
+            <br><br>
             <div class="centrar">
                 <p id="respuesta"></p>
             </div>
@@ -46,54 +45,13 @@
                 <p id="respuesta2" ></p>
             </div>
             <div class=" boton_copiar centrar">
-                <button class="copiar  " >Copiar
+                <button id="copiar" class="copiar  " >Copiar
                 </button>        
             </div>
         </div>
     </div>
 </body>
-<script>
-    let page = document.getElementById("respuesta");   
-    let resp2 = document.getElementById("respuesta2");  
-    let pregunta_input = document.getElementById("pregunta");
-    let btn_encriptar = document.getElementById("encriptar");   
-    let muneco = document.getElementById("muneco");
-    // var textoIngresado = prompt("Ingrese el texto para encriptarlo");
-    // page.innerText = textoIngresado;
-
-
-
-    function verificar(){
-
-        var texto = pregunta_input.value
-            .replace(/e/gi, "enter")
-            .replace(/i/gi, "imes")
-            .replace(/a/gi, "ai")
-            .replace(/o/gi, "ober")
-            .replace(/u/gi, "ufat");
-         
-        if ( texto.length != 0 ){
-            alert("Excelente");  
-            resp2.style.display = 'block';
-            muneco.style.display = 'block';
-            muneco.src = "./images/done.svg"  
-            // muneco.style.display = 'none';
-            resp2.innerText = "Texto encriptado con éxito";
-        }
-        else{
-            resp2.style.display = 'none';
-            muneco.style.display = 'block';
-            muneco.src = "./images/muneco.svg"
-            alert("Oooops! Debes ingresar algun texto")
-        }
-            
-
-        page.innerText = texto;        
-      
-    }
-
-    btn_encriptar.onclick = verificar;
-
+<script src="./pig.js">
 
 </script>
 </html>
